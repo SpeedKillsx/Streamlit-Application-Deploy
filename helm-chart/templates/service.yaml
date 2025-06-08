@@ -4,6 +4,8 @@ metadata:
   name: {{.Values.app.name }}-service
   namespace: default
 spec:
+  selector:
+    app: {{.Values.app.name }}
   type: NodePort
   ports:
     - port: {{.Values.App.port }}
