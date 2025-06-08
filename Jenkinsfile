@@ -18,8 +18,8 @@ pipeline{
                     sh 'ls'
                     sh 'python3 -m venv myenv'
                     sh '. myenv/bin/activate && pip install -r requirements.txt'
-                    sh '. myenv/bin/activate && streamlit run app.py'
-
+                    sh '. myenv/bin/activate && streamlit run app.py --server.address=0.0.0.0 --server.port=8501'
+                    echo "Build completed successfully"
                 }
             }
         }
