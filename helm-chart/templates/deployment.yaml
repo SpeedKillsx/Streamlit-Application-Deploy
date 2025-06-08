@@ -38,4 +38,3 @@ spec:
             env:
             - name: STREAMLIT_SERVER_HEADLESS
               value: "true"
-
