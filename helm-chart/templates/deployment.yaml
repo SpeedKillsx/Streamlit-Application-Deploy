@@ -13,12 +13,12 @@ spec:
             labels:
                 app: {{.Values.app.name }}
         spec:
-        containers:
-        - name: {{.Values.app.name }}
-          image: "{{.Values.app.image.repository }}:{{.Values.app.image.tag }}"
-          ports:
-          - containerPort: {{.Values.App.port }}
-          imagePullPolicy: IfNotPresent
+          containers:
+          - name: {{.Values.app.name }}
+            image: "{{.Values.app.image.repository }}:{{.Values.app.image.tag }}"
+            ports:
+            - containerPort: {{.Values.App.port }}
+            imagePullPolicy: IfNotPresent
           resources:
             requests:
               memory: "512Mi"
@@ -36,6 +36,6 @@ spec:
             port: {{.Values.App.port }}
             initialDelaySeconds: 20
             periodSeconds: 10 
-            env:
-            - name: STREAMLIT_SERVER_HEADLESS
-              value: "true"
+          env:
+          - name: STREAMLIT_SERVER_HEADLESS
+            value: "true"
