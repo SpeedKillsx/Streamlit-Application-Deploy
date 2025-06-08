@@ -17,8 +17,8 @@ pipeline{
                     sh 'pwd'
                     sh 'ls'
                     sh 'python3 -m venv myenv'
-                    sh 'source myenv/bin/activate && pip install -r requirements.txt'
-                    sh 'source myenv/bin/activate && python streamlit run app'
+                    sh '. myenv/bin/activate && pip install -r requirements.txt'
+                    sh '. myenv/bin/activate && python streamlit run app'
 
                 }
             }
