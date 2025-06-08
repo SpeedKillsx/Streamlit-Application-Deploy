@@ -3,7 +3,6 @@ app:
   image:
     repository: speedskillsx/streamlit-application
     tag: latest
-  service:
-    type: ClusterIP
-    port: 8501
 
+App:
+  port: 8501

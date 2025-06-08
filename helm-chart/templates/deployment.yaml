@@ -17,7 +17,8 @@ spec:
         - name: {{.Values.app.name }}
           image: "{{.Values.app.image.repository }}:{{.Values.app.image.tag }}"
           ports:
-          - containerPort: {{.Values.app.service.port }}
+          - containerPort: {{.Values.App.port }}
+          imagePullPolicy: IfNotPresent
           resources:
             requests:
               memory: "512Mi"
