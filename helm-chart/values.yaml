@@ -1,5 +1,5 @@
 app:
-  name: streamlit-application
+  name: streamlit
   image:
     repository: speedskillsx/streamlit-application
     tag: latest
