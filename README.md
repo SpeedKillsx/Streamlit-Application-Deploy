@@ -39,3 +39,5 @@ or
 ```sh
 http://PublicIP:8501
 ```
+
+For more information, please refer to the original repository: [iQuantC/Scikit-learn-Streamlit-Docker-Kubernetes](https://github.com/iQuantC/Scikit-learn-Streamlit-Docker-Kubernetes)
