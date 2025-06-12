@@ -9,7 +9,7 @@ pipeline{
                 }
             }
         }
-        stage("Install Dependencies"){ {
+        stage("Install Dependencies") {
             steps {
                 script {
                     echo "Installing dependencies for the project..."
